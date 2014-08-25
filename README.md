@@ -4,7 +4,7 @@ swiftfile
 simple file api wrapper
 
 #sample  
-``` swfit
+``` swift
 var f:File = File()
 f.open(path: "a.txt", mode: "w+")
 f.write(str: "hello world") // or you can write binary data like this: f.write(data:bindata)
