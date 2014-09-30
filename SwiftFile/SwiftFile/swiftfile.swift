@@ -9,7 +9,7 @@
 import Foundation
 
 class File{
-    var _file:UnsafePointer<FILE>?
+    var _file:UnsafeMutablePointer<FILE>?
     var path:String?
     init(){}
     func open(path p:String,mode m:String){
