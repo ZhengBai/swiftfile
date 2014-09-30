@@ -13,3 +13,5 @@ var data=f.read(100)
 println(String.stringWithUTF8String(data!)!)
 f.close()
 ```
+
+see example in ViewController.swift
