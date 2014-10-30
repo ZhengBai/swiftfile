@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         f.write(data: [65,66,67])//写字节流ABC
         f.seek(offset: 0, mode: SEEK_SET)
         let readdata=f.read(1024)
-        println(String.stringWithUTF8String(readdata!)!)
+        let str=String(CString: readdata!, encoding: NSUTF8StringEncoding)
+        println(str!)
         f.close()
         
         // Do any additional setup after loading the view, typically from a nib.
